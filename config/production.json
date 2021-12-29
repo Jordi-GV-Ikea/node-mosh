@@ -1,0 +1,6 @@
+{
+    "name":"App in production",
+    "mail" :{
+        "adress":"Mail prod adress"
+    }
+}
