@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const morgan = require("morgan");
 router.use(morgan("tiny"));
-const {Genre, validateGenre} = require('../models/genres')
+const {Genre, validateGenre} = require('../models/genre')
 const mongoose = require("mongoose");
 
 router.get("/", async (req, res) => {

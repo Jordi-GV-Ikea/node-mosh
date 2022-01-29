@@ -3,7 +3,6 @@ const router = express.Router();
 const morgan = require("morgan");
 router.use(morgan("tiny"));
 const {Customer, validateCustomer} = require ('../models/customer');
-//const mongoose = require("mongoose");
 
 router.get("/", async (req, res) => {
   const customers = await Customer.find().sort("name");
